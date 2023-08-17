@@ -1,0 +1,17 @@
+{
+    "name": "perspective/theme15ex2airfreight",
+    "description": "",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "license": [
+      "MIT"
+    ],
+    "autoload": {
+      "psr-4": {
+        "Perspective\\Theme15Ex2AirFreight\\": ""
+      },
+      "files": [
+        "registration.php"
+      ]
+    }
+  }

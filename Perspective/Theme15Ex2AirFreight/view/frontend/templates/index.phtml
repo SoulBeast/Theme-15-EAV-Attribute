@@ -1,0 +1,16 @@
+<?php
+/** @var \Perspective\Theme15Ex2AirFreight\Block\Template $block */
+
+$viewModel = $block->getViewModel();
+
+$currentProduct = $viewModel->getCurrentProduct();
+
+$imaginaryWeight = 38;
+
+if ($viewModel->isEnabled() && $currentProduct->getData('airfreight_attribute') !== "none"  && $viewModel->getValueX() < $imaginaryWeight) :
+    echo "Вес вашего багажа " . $imaginaryWeight . " кг, что превышает максимальный вес в " . $viewModel->getValueX() . " кг<br>";
+    $tempPrice = $imaginaryWeight - $viewModel->getValueX();
+    $finalPrice = $viewModel->getValueY() * $tempPrice;
+    echo "За перевозку " . $currentProduct->getData('airfreight_attribute') 
+    . " будет начислена дополнительная оплата в " . $finalPrice . " $<br>";
+endif;

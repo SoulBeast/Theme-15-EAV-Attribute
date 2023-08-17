@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Perspective_Theme15Ex2AirFreight::theme15ex2airfreight" title="Theme 15 Air Freight Only" module="Perspective_Theme15Ex2AirFreight" sortOrder="51" resource="Perspective_Theme15Ex2AirFreight::theme15ex2airfreight"/>
+        <add id="Perspective_Theme15Ex2AirFreight::hello_configuration" title="Configuration" module="Perspective_Theme15Ex2AirFreight" sortOrder="99" parent="Perspective_Theme15Ex2AirFreight::theme15ex2airfreight" action="adminhtml/system_config/edit/section/theme15ex2airfreight" resource="Perspective_Theme15Ex2AirFreight::theme15ex2airfreight_configuration"/>
+    </menu>
+</config>
